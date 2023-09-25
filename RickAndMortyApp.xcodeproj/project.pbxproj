@@ -23,6 +23,7 @@
 		C3CE55992ABDB29700A685C4 /* RMCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CE55982ABDB29700A685C4 /* RMCharacterViewController.swift */; };
 		C3CE559B2ABDB2C700A685C4 /* RMDescribesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CE559A2ABDB2C700A685C4 /* RMDescribesViewController.swift */; };
 		C3E11BBF2ABF15440096F8C7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3E11BBE2ABF15440096F8C7 /* SnapKit */; };
+		C3ED19E62AC1796600E55628 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C3ED19E52AC1796600E55628 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3ED19E62AC1796600E55628 /* Kingfisher in Frameworks */,
 				C3E11BBF2ABF15440096F8C7 /* SnapKit in Frameworks */,
 				C307AE722AC04B87004C32EA /* Alamofire in Frameworks */,
 			);
@@ -162,6 +164,7 @@
 			packageProductDependencies = (
 				C3E11BBE2ABF15440096F8C7 /* SnapKit */,
 				C307AE712AC04B87004C32EA /* Alamofire */,
+				C3ED19E52AC1796600E55628 /* Kingfisher */,
 			);
 			productName = RickAndMortyApp;
 			productReference = C3CE55752ABDACB500A685C4 /* RickAndMortyApp.app */;
@@ -194,6 +197,8 @@
 			packageReferences = (
 				C3E11BBD2ABF15440096F8C7 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C307AE702AC04B87004C32EA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C3ED19E12AC1713000E55628 /* XCRemoteSwiftPackageReference "Nuke" */,
+				C3ED19E42AC1796600E55628 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = C3CE55762ABDACB500A685C4 /* Products */;
 			projectDirPath = "";
@@ -468,6 +473,22 @@
 				kind = branch;
 			};
 		};
+		C3ED19E12AC1713000E55628 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		C3ED19E42AC1796600E55628 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -480,6 +501,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3E11BBD2ABF15440096F8C7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		C3ED19E52AC1796600E55628 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3ED19E42AC1796600E55628 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,6 +6,7 @@
 //
 
 import SnapKit
+import Kingfisher
 import UIKit
 
 class ImageCell: UICollectionViewCell {
@@ -29,8 +30,10 @@ class ImageCell: UICollectionViewCell {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
         view.translatesAutoresizingMaskIntoConstraints = false
+      
         return view
     }()
+    
     
 }
 // MARK: Private methods

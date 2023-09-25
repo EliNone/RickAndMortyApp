@@ -5,6 +5,7 @@
 //  Created by Элина on 22.09.2023.
 //
 import SnapKit
+
 import UIKit
 
 final class RMCharacterViewController: UIViewController {
@@ -13,7 +14,7 @@ final class RMCharacterViewController: UIViewController {
         super.viewDidLoad()
        initialize()
        loadImages()
-        
+       
        title = "Characters"
     }
     
@@ -21,6 +22,7 @@ final class RMCharacterViewController: UIViewController {
     private var collectionView: UICollectionView!
     private var images: [UIImage?] = []
     private let apiManager = APIManager()
+    
 }
     
 // MARK: - Private methods
@@ -47,7 +49,7 @@ final class RMCharacterViewController: UIViewController {
         }
         func loadImages() {
             let imageIDs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-            var images: [UIImage?] = []
+            var images: [UIImage?] = [UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus"), UIImage(systemName: "person.fill.badge.plus")]
             
             let group = DispatchGroup()
             imageIDs.forEach {
@@ -61,6 +63,7 @@ final class RMCharacterViewController: UIViewController {
                 self.images = images
                 self.collectionView.reloadData()
             }
+            
         }
     }
 

@@ -4,7 +4,7 @@
 //
 //  Created by Элина on 24.09.2023.
 //
-
+import Kingfisher
 import UIKit
 
 class APIManager {
@@ -38,8 +38,11 @@ class APIManager {
         task.resume()
     }
     
+    // чтоб передать харкорные картинки вместо "https://rickandmortyapi.com/api/character" передам "https://rickandmortyapi.com/api/character/2"
     
-    private let urlString = "https://rickandmortyapi.com/api/character/"
+    private let urlString = "https://rickandmortyapi.com/api/character/2"
+    
+    
 }
 
 
